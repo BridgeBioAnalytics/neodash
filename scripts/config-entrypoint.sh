@@ -1,6 +1,6 @@
 #!/bin/sh
 ###########
-set -e 
+set -e
 
 echo " \
     { \
@@ -25,6 +25,6 @@ echo " \
     \"loggingMode\": \"${loggingMode:='0'}\",  \
     \"loggingDatabase\": \"${loggingDatabase:='logs'}\",  \
     \"customHeader\": \"${customHeader:=}\"  \
-   }" > /usr/share/nginx/html/config.json
+  }" > /usr/share/nginx/html/neodash/config.json
 
-echo "${styleConfigJson:={\}}" > /usr/share/nginx/html/style.config.json
+echo "${styleConfigJson:={\}}" > /usr/share/nginx/html/neodash/style.config.json
